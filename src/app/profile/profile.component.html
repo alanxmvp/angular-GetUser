@@ -1,0 +1,10 @@
+<h4>Profile Photo</h4>
+<div *ngFor="let user of users">
+  <div>
+    <p>{{ userId }}</p>
+    <img [src]="user" width="500" height="500">
+  </div>
+</div>
+<div>
+  <button (click)="backClicked()">Back</button>
+</div>
